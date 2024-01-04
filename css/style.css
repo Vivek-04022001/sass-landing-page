@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* outline:1px solid red; */
 }
 
 :root {
@@ -87,6 +88,78 @@ img {
     margin-bottom:20px;
 }
 
+/* video */
+
+.video{
+    padding: 10px 0 40px;
+
+}
+.video-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-preview{
+    margin-bottom: 20px;
+
+}
+
+/* testimonials */
+.testimonials{
+    padding: 14px 0px;
+}
+
+.testimonials .testimonials-heading{
+    width: 700px;
+    margin:-bottom:40px;
+}
+
+.testimonials .testimonials-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+    
+
+}
+.testimonials .card p:nth-child(2){
+    margin-top:30px;
+    font-weight: bold;
+}
+
+/* pricing */
+.pricing-grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+    margin-top:50px;
+}
+
+.pricing .pricing-card-subheading{
+    margin-bottom:30px;
+}
+
+.pricing .pricing-card-price{
+    margin-bottom: 30px;
+    padding:20px 0px;
+    border-bottom: 1px solid #ccc;
+}
+.pricing ul{
+    margin:30px 0;
+
+}
+.pricing ul li{
+    margin-bottom: 20px;
+}
+
+.pricing ul li i{
+    margin-right:10px;
+}
+
+.pricing .pricing-footer{
+    margin:30px 0;
+}
+
 /* Utility Classes */
 .container {
   max-width: 1100px;
@@ -98,6 +171,14 @@ img {
   margin: 0 auto;
   padding-inline: 15px;
 }
+
+  /* Cards */
+  .card{
+    background: #fff;
+    color:#000;
+    border-radius: 10px;
+    padding:20px;
+}
 .btn {
   display: inline-block;
   padding: 13px 20px;
@@ -108,6 +189,7 @@ img {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  text-align:center;
   transition: 0.5s;
 }
 
@@ -164,3 +246,26 @@ img {
 .text-center {
   text-align: center;
 }
+
+/* Background */
+
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+  }
+  
+  .bg-light {
+    background: var(--light-color);
+    color: #333;
+  }
+  
+  .bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+  }
+  
+  .bg-black {
+    background: #000;
+    color: #fff;
+  }
+
